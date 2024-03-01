@@ -1,0 +1,36 @@
+{
+  "promptDelete": false,
+  "vimMode": true,
+  "newFileLocation": "current",
+  "showLineNumber": true,
+  "showFrontmatter": true,
+  "attachmentFolderPath": "./attachments/KeyVault",
+  "readableLineLength": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "livePreview": false,
+  "spellcheckLanguages": null,
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "Engles",
+    "Highgate",
+    "Lepore",
+    "for ever",
+    "Rheinische",
+    "Zeitung",
+    "organisations",
+    "expressvpn",
+    "BrightKey",
+    "Skyharbor"
+  ],
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "defaultViewMode": "source"
+}

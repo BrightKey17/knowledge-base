@@ -1,0 +1,93 @@
+@startuml diagram
+
+scale 3
+Alice -> Bob :test
+
+scale 2
+class Event {
+    +startTime: DateTime
+    +venue: string
+    +registrationClosed: boolean
+    -notifyAttendes()
+}
+
+class ApplicationUser {
+    -userName: string
+    -password: string
+    +isLocked: boolean
+    -suggestRandomPassword()
+    +changeProfilePic()
+}
+
+class Speaker {
+    +openForSpeaking: boolean
+    -callForAction()
+    +applyAsSpkePerson
+}
+
+class Topic {
+    +title: string
+    +sourceCodeUrl: string
+    -downloadMaterials()
+}
+
+class Attendee {
+    -eventAttended: number
+    -suggestEvenBasedOnPreference()
+    -registerForTicket()
+}
+
+ApplicationUser <|-- "extends" Speaker
+ApplicationUser <|-- Attendee
+Speaker "1" *-- "composite" Topic
+Event "1" o-- "call" Speaker
+Event "1" o-- "call" Attendee
+
+@enduml
+
+
+@startuml flowchart
+scale 2
+start
+:Add games to cart;
+:Checkout;
+:Check cookie;
+while (if cookie?) is (is invalid)
+    :Show login form;
+endwhile
+fork
+    :Mail invoice;
+fork again
+    :Load games;
+end fork
+:Install and play;
+stop
+@enduml
+
+@startuml sequence
+Client -> HttpServer: request
+
+HttpServer -> WebApp: application_callable()
+note right: application_callable(environ, start_response)
+
+WebApp -> HttpServer: start_response()
+note right: start_response(status, headers, exc_info)
+
+WebApp -> HttpServer: return iterator
+
+HttpServer -> Client: response
+
+@enduml
+
+
+@startgantt Gantt
+[Prototype design] lasts 15 days
+[Test prototype] lasts 10 days
+-- All example --
+[Task 1 (1 day)] lasts 1 day
+[T2 (5 days)] lasts 5 days
+[T3 (1 week)] lasts 1 week
+[T4 (1 week and 4 days)] lasts 1 week and 4 days
+[T5 (2 weeks)] lasts 2 weeks
+@endgantt
+

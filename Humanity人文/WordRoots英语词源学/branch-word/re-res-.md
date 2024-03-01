@@ -1,0 +1,7 @@
+=: 
+
+---
+real
+rebus
+reify
+republic

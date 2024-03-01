@@ -1,0 +1,19 @@
+/* save this as wider-note.css in your snippet */
+.wider-note {
+    /*Set the width of your desire here*/
+    --user-custom-width: 76rem !important;
+    /*Code for edit view*/
+    --file-line-width: var(--user-custom-width) ;
+    /*Code for live read view*/
+    --content-max-width: 80rem !important;
+    --content-base-width: var(--user-custom-width);
+}
+/* 选择器，用于限定样式的作用范围，:not(......)表示不作用的例外情况*/
+.cm-content >.cm-line:not(
+.HyperMD-codeblock,
+.HyperMD-list-line
+)
+{
+    padding-top: 0.5em;
+    padding-bottom:0.5em;
+}

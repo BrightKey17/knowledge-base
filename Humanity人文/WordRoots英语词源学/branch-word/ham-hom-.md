@@ -1,0 +1,6 @@
+=: home
+
+---
+hamlet
+home
+haunt

@@ -1,0 +1,14 @@
+{
+  "accentColor": "",
+  "baseFontSize": 22,
+  "cssTheme": "Obsidian Nord",
+  "monospaceFontFamily": "DejaVu Sans Mono",
+  "textFontFamily": "Lucida Sans",
+  "theme": "obsidian",
+  "interfaceFontFamily": "Consolas",
+  "translucency": true,
+  "enabledCssSnippets": [
+    "line-width",
+    "obsidian-customized"
+  ]
+}

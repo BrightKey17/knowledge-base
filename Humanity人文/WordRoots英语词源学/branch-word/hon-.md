@@ -1,0 +1,5 @@
+=: honor, dignity
+
+---
+honest
+honor
