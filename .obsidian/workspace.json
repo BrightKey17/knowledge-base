@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer-technique/Git.md",
+                "file": "2024-03-04.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer-technique/Git.md"
+                "file": "2024-03-04.md"
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer-technique/Git.md",
+                "file": "2024-03-04.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer-technique/Git.md",
+                "file": "2024-03-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "computer-technique/Git.md"
+                "file": "2024-03-04.md"
               }
             }
           }
@@ -216,14 +216,20 @@
   },
   "active": "d878157061894af2",
   "lastOpenFiles": [
-    "Obsidian/Callout.md",
+    "aim-today/2024-02-22.md",
+    "2024-03-04.md",
+    "zeal-reflect/NeoVista.md",
+    "zeal-reflect/NeoVista_冲突文件_qizn_20240223120245.md",
+    "workspace/XDC.md",
+    "humanity人文/BigFive.md",
+    "humanity人文/WordRoots英语词源学/Common Latin and Greek roots_冲突文件_qizn_20240223120245.md",
     "computer-technique/Git.md",
+    "Obsidian/Callout.md",
     "pesonalize/KeyVault.md",
     "master",
     "computer-technique/CMD-Linux.md",
     "computer-technique/Docker.md",
     "computer-technique/images/linux_kernel.jpg",
-    "humanity人文/BigFive.md",
     "computer-technique/CMD-Linux.md.baiduyun.uploading.cfg",
     "obsidian/MarkdownSyntax.md",
     "zeal-reflect/NeoVista_冲突文件_qizn_20240223120245.md.baiduyun.uploading.cfg",
@@ -234,11 +240,8 @@
     "art-muse/大唐三藏圣教序米字格版/1-172(1).jpg.baiduyun.downloading",
     "art-muse/大唐三藏圣教序米字格版/1-180(1).jpg.baiduyun.downloading.cfg",
     "art-muse/大唐三藏圣教序米字格版/1-180(1).jpg.baiduyun.downloading",
-    "zeal-reflect/NeoVista_冲突文件_qizn_20240223120245.md",
-    "humanity人文/WordRoots英语词源学/Common Latin and Greek roots_冲突文件_qizn_20240223120245.md",
     "computer-technique/linux_kernel.jpg",
     "gourmet-journey美食旅行/枇杷.md",
-    "2024-02-22.md",
     "computer-technique/Vim/Global.md",
     "2024-02-21.md",
     "aim-today/2024-02-21.md",
@@ -252,14 +255,11 @@
     "computer-technique/Design-Pattern/attachements/Client-Server-Architecture.png",
     "computer-technique/Design-Pattern/attachements/Broker-Architecture.png",
     "computer-technique/images/DNS_schema.svg",
-    "zeal-reflect/NeoVista.md",
     "obsidian/Callout.md",
     "computer-technique/Design-Pattern/Object Oriented Design.md",
     "computer-technique/Design-Pattern/Single Responsibility Principle.md",
     "ComputerTechnique/ObjectOrientedDesign.md",
     "humanity人文/先贤/格瓦拉.md",
-    "humanity人文/WordRoots英语词源学/The Origin of the English Alphabet (and all its 26 letters).md",
-    "humanity人文/WordRoots英语词源学/Common Latin and Greek roots.md",
     "Untitled.canvas",
     "art-muse/Calligraphy书法/Engraver_Capitals.jpg",
     "art-muse/Calligraphy书法/黄州寒食诗帖苏轼.jpeg"

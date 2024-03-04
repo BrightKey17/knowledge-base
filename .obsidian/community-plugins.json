@@ -41,5 +41,6 @@
   "vim-im-select",
   "obsidian-sortable",
   "obsidian-plugin-toc",
-  "obsidian-latex"
+  "obsidian-latex",
+  "obsidian-git"
 ]

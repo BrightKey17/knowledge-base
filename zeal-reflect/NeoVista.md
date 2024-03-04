@@ -10,3 +10,5 @@ MAP. (Music | Art | Physical)
 Math Algrithem Process
 
 Focus on self-expression (facial | oval | typing | writing)
+
+现代社会提升了普通人的生活品质，但是

@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "2024-03-04",
+      "path": "2024-03-04.md"
+    },
+    {
+      "basename": "2024-02-22",
+      "path": "aim-today/2024-02-22.md"
+    },
+    {
+      "basename": "NeoVista",
+      "path": "zeal-reflect/NeoVista.md"
+    },
+    {
+      "basename": "XDC",
+      "path": "workspace/XDC.md"
+    },
+    {
+      "basename": "BigFive",
+      "path": "humanity人文/BigFive.md"
+    },
+    {
       "basename": "Git",
       "path": "computer-technique/Git.md"
     },
@@ -25,20 +45,12 @@
       "path": "computer-technique/images/linux_kernel.jpg"
     },
     {
-      "basename": "BigFive",
-      "path": "humanity人文/BigFive.md"
-    },
-    {
       "basename": "MarkdownSyntax",
       "path": "obsidian/MarkdownSyntax.md"
     },
     {
       "basename": "枇杷",
       "path": "gourmet-journey美食旅行/枇杷.md"
-    },
-    {
-      "basename": "2024-02-22",
-      "path": "2024-02-22.md"
     },
     {
       "basename": "Global",
@@ -87,10 +99,6 @@
     {
       "basename": "DNS_schema",
       "path": "computer-technique/images/DNS_schema.svg"
-    },
-    {
-      "basename": "NeoVista",
-      "path": "zeal-reflect/NeoVista.md"
     },
     {
       "basename": "Callout",
@@ -145,10 +153,6 @@
       "path": "pesonalize/Applications.md"
     },
     {
-      "basename": "XDC",
-      "path": "workspace/XDC.md"
-    },
-    {
       "basename": "Plugins",
       "path": "pesonalize/Plugins.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "SuffixList",
       "path": "humanity人文/WordRoots英语词源学/brief-list/SuffixList.md"
-    },
-    {
-      "basename": "-tus",
-      "path": "humanity人文/WordRoots英语词源学/brief-list/-tus.md"
     }
   ],
   "omittedPaths": [],
