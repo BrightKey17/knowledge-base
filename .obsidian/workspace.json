@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pesonalize/KeyVault.md",
+                "file": "computer-technique/Git.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "f531ac87a67f009a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian/Callout.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -94,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pesonalize/KeyVault.md"
+                "file": "computer-technique/Git.md"
               }
             }
           },
@@ -112,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pesonalize/KeyVault.md",
+                "file": "computer-technique/Git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pesonalize/KeyVault.md",
+                "file": "computer-technique/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +185,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "pesonalize/KeyVault.md"
+                "file": "computer-technique/Git.md"
               }
             }
           }
@@ -201,12 +214,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b9400a2705c48d09",
+  "active": "d878157061894af2",
   "lastOpenFiles": [
+    "Obsidian/Callout.md",
+    "computer-technique/Git.md",
+    "pesonalize/KeyVault.md",
     "master",
     "computer-technique/CMD-Linux.md",
     "computer-technique/Docker.md",
-    "Obsidian/Callout.md",
     "computer-technique/images/linux_kernel.jpg",
     "humanity人文/BigFive.md",
     "computer-technique/CMD-Linux.md.baiduyun.uploading.cfg",
@@ -219,7 +234,6 @@
     "art-muse/大唐三藏圣教序米字格版/1-172(1).jpg.baiduyun.downloading",
     "art-muse/大唐三藏圣教序米字格版/1-180(1).jpg.baiduyun.downloading.cfg",
     "art-muse/大唐三藏圣教序米字格版/1-180(1).jpg.baiduyun.downloading",
-    "art-muse/大唐三藏圣教序米字格版/1-170(1).jpg.baiduyun.downloading.cfg",
     "zeal-reflect/NeoVista_冲突文件_qizn_20240223120245.md",
     "humanity人文/WordRoots英语词源学/Common Latin and Greek roots_冲突文件_qizn_20240223120245.md",
     "computer-technique/linux_kernel.jpg",
@@ -246,7 +260,6 @@
     "humanity人文/先贤/格瓦拉.md",
     "humanity人文/WordRoots英语词源学/The Origin of the English Alphabet (and all its 26 letters).md",
     "humanity人文/WordRoots英语词源学/Common Latin and Greek roots.md",
-    "obsidian/Footnote.md",
     "Untitled.canvas",
     "art-muse/Calligraphy书法/Engraver_Capitals.jpg",
     "art-muse/Calligraphy书法/黄州寒食诗帖苏轼.jpeg"

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "computer-technique/Git.md"
+    },
+    {
+      "basename": "Callout",
+      "path": "Obsidian/Callout.md"
+    },
+    {
       "basename": "KeyVault",
       "path": "pesonalize/KeyVault.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "Docker",
       "path": "computer-technique/Docker.md"
-    },
-    {
-      "basename": "Callout",
-      "path": "Obsidian/Callout.md"
     },
     {
       "basename": "linux_kernel",
@@ -195,10 +199,6 @@
     {
       "basename": "-tus",
       "path": "humanity人文/WordRoots英语词源学/brief-list/-tus.md"
-    },
-    {
-      "basename": "-able-ible-ble-ile",
-      "path": "humanity人文/WordRoots英语词源学/branch-word/-able-ible-ble-ile.md"
     }
   ],
   "omittedPaths": [],
