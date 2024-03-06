@@ -4,13 +4,25 @@
 ## local file push
 
 create a new repository
+by clone a repository
+```bash
+git clone http://192.168.157.249:8765/next-generation-platform/xdc/ms-xdc.git
+cd ms-xdc
+git switch -c master
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+```
+by pushing an existing folder
 ```bash
 git init --initial-branch master
 "Initialized empty Git repository in ..."
+git remote add origin 'URL'
 git add  .
 git commit -m "comments"
-git remote add origin "uri"
-git push -u origin main
+git remote add origin 'URL'
+git push -u origin master
 ```
 push an existing repository
 ```bash
@@ -19,7 +31,14 @@ git branch -M branch
 git push -u origin main
 
 ```
-
+discard old repository
+```bash
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin http://192.168.157.249:8765/next-generation-platform/xdc/ms-xdc.git
+git push -u origin --all
+git push -u origin --tags
+```
 ## git confirm user
 
 ```bash
@@ -107,6 +126,17 @@ git stash create [<message>]
 git stash store [-m|--message <message>] [-q|--quiet] <commit>
 ```
 
+## Authentication
+
+Swapping an HTTPS Repo To SSH Authentication
+```bash
+git config --list
+git remote get-url --all origin
+git remote rm origin
+git remote add origin 'ssh-url'
+git fetch origin
+git push --set-upstream origin/master
+```
 
 # SSH
 test the ssh connection:
@@ -114,3 +144,26 @@ test the ssh connection:
 ssh -Tv git@github.com "ziningqi@yahoo.com" 
 ```
 
+## Key
+
+Using a Different SSH Key
+~/.ssh/config
+```txt
+
+# github
+Host github.com
+	HostName github.com
+	User git
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+	IdentitiesOnly yes
+
+
+# gitlab
+Host gitlab
+	HostName 192.168.157.249
+	User git
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/neusoftXDC
+
+```

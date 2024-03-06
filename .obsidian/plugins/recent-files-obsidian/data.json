@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Git",
+      "path": "computer-technique/Git.md"
+    },
+    {
       "basename": "2024-03-04",
       "path": "2024-03-04.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "BigFive",
       "path": "humanity人文/BigFive.md"
-    },
-    {
-      "basename": "Git",
-      "path": "computer-technique/Git.md"
     },
     {
       "basename": "Callout",

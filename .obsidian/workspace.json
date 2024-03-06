@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-03-04.md",
+                "file": "computer-technique/Git.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": true
@@ -107,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-03-04.md"
+                "file": "computer-technique/Git.md"
               }
             }
           },
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-03-04.md",
+                "file": "computer-technique/Git.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-03-04.md",
+                "file": "computer-technique/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "2024-03-04.md"
+                "file": "computer-technique/Git.md"
               }
             }
           }
@@ -216,8 +216,8 @@
   },
   "active": "d878157061894af2",
   "lastOpenFiles": [
-    "aim-today/2024-02-22.md",
     "2024-03-04.md",
+    "aim-today/2024-02-22.md",
     "zeal-reflect/NeoVista.md",
     "zeal-reflect/NeoVista_冲突文件_qizn_20240223120245.md",
     "workspace/XDC.md",
