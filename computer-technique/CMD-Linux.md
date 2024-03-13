@@ -172,7 +172,21 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
+## gate way
+```bash
+ip address show
+ip route show
+nmcli c show
 
+sudo ip route add 192.168.2.53/24 via 192.168.137.1 dev wlp8s0
+sudo ip route add 192.168.157.0/24 via 192.168.137.1 dev wlp8s0
+sudo ip route add 10.142.0.0/24 via 192.168.137.1 dev wlp8s0
+sudo ip route add 10.170.33.0/24 via 192.168.137.1 dev wlp8s0
+###
+
+sudo ip route add 192.168.0.0/16 via 192.168.137.1 dev wlp8s0
+sudo ip route add 10.0.0.0/8 via 192.168.137.1 dev wlp8s0
+```
 # CentOS
 ```sh
 //setup network adapter
