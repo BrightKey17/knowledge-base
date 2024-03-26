@@ -54,7 +54,9 @@ __export(exports, {
 var import_obsidian = __toModule(require("obsidian"));
 var DEFAULT_SETTINGS = {
   metrics: "wpm",
-  darken_after_pausing: true
+  darken_after_pausing: true,
+  monkeytype_counting: true,
+  show_minmax: false
 };
 function getMetricFactor(metric) {
   switch (metric) {
@@ -72,21 +74,48 @@ function average_array(array) {
   });
   return avg / array.length;
 }
+function minmax_in_array(array) {
+  var min_val = 1e4;
+  var max_val = 0;
+  var blurred_array = [];
+  for (var i = 1; i < array.length - 1; i++) {
+    var val = (array[i] + array[i + 1] + array[i - 1]) / 3;
+    blurred_array.push(val);
+  }
+  blurred_array.forEach((val2, idx) => {
+    max_val = Math.max(val2, max_val);
+    min_val = Math.min(val2, min_val);
+  });
+  return { min: min_val, max: max_val };
+}
+function array_shiftadd(array, value) {
+  for (var i = 0; i < array.length - 1; i++) {
+    array[i] = array[i + 1];
+  }
+  array[array.length - 1] = value;
+  return array;
+}
 var TypingSpeedPlugin = class extends import_obsidian.Plugin {
   constructor() {
     super(...arguments);
     this.Typed = [0];
+    this.pollings_in_seconds = 1;
     this.keyTypedInSecond = 0;
     this.wordTypedInSecond = 0;
     this.keyTypedSinceSpace = 0;
   }
   hasStoppedTyping(typed) {
-    const check_start = typed.length - 2;
+    const second_check = 2 * this.pollings_in_seconds;
+    const check_start = typed.length - second_check;
     if (check_start < 0) {
       return false;
     }
-    const sum_last_three = typed[check_start] + typed[check_start + 1];
-    return sum_last_three == 0;
+    for (var i = check_start; i < typed.length; i++) {
+      if (typed[i] != 0) {
+        return false;
+      }
+    }
+    return true;
   }
   onload() {
     return __async(this, null, function* () {
@@ -101,7 +130,11 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
           this.keyTypedSinceSpace += 1;
         }
         if (evt.key == " " && this.keyTypedSinceSpace != 0) {
-          this.wordTypedInSecond += 1;
+          if (this.settings.monkeytype_counting) {
+            this.wordTypedInSecond += (this.keyTypedSinceSpace + 1) / 5;
+          } else {
+            this.wordTypedInSecond += 1;
+          }
           this.keyTypedSinceSpace = 0;
         }
       });
@@ -109,6 +142,8 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
         var average = 0;
         var fact = getMetricFactor(this.settings.metrics);
         var added = 0;
+        var min_val = 0;
+        var max_val = 0;
         if (this.settings.metrics == "cps" || this.settings.metrics == "cpm") {
           added = this.keyTypedInSecond;
           this.keyTypedInSecond = 0;
@@ -117,10 +152,20 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
           this.wordTypedInSecond = 0;
         }
         if (!this.hasStoppedTyping(this.Typed) || added != 0) {
-          if (this.Typed.push(added) > 10) {
-            this.Typed.shift();
+          if (this.hasStoppedTyping(this.Typed)) {
+            this.Typed = [];
+          }
+          if (this.Typed.length > this.pollings_in_seconds * 10) {
+            array_shiftadd(this.Typed, added);
+          } else {
+            this.Typed.push(added);
           }
           average = Math.round(average_array(this.Typed) * fact);
+          if (this.settings.show_minmax) {
+            var { min: min_avg, max: max_avg } = minmax_in_array(this.Typed);
+            min_val = Math.round(min_avg * fact);
+            max_val = Math.round(max_avg * fact);
+          }
           if (this.settings.darken_after_pausing) {
             this.statusBarItemEl.style.opacity = "100%";
           }
@@ -129,8 +174,12 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
             this.statusBarItemEl.style.opacity = "50%";
           }
         }
-        this.statusBarItemEl.setText(average + " " + this.settings.metrics);
-      }, 1e3));
+        var final_str = average + " " + this.settings.metrics;
+        if (this.settings.show_minmax) {
+          final_str += " (" + min_val + "-" + max_val + ")";
+        }
+        this.statusBarItemEl.setText(final_str);
+      }, 1e3 / this.pollings_in_seconds));
     });
   }
   onunload() {
@@ -138,6 +187,12 @@ var TypingSpeedPlugin = class extends import_obsidian.Plugin {
   loadSettings() {
     return __async(this, null, function* () {
       this.settings = Object.assign({}, DEFAULT_SETTINGS, yield this.loadData());
+      if (this.settings.monkeytype_counting == void 0) {
+        this.settings.monkeytype_counting = DEFAULT_SETTINGS.monkeytype_counting;
+      }
+      if (this.settings.show_minmax == void 0) {
+        this.settings.show_minmax = DEFAULT_SETTINGS.show_minmax;
+      }
     });
   }
   saveSettings() {
@@ -162,6 +217,14 @@ var TypingSpeedSettingTab = class extends import_obsidian.PluginSettingTab {
     new import_obsidian.Setting(containerEl).setName("Typing speed metric").setDesc("choose which metric to use for typing speed").addDropdown((text) => text.addOption("wpm", "word per minute").addOption("cps", "character per second").addOption("cpm", "character per minute").setValue(this.plugin.settings.metrics).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.metrics = value;
       this.plugin.Typed = [0];
+      yield this.plugin.saveSettings();
+    })));
+    new import_obsidian.Setting(containerEl).setName("Normalize word counting").setDesc("Replicate the word counting functionality of MonkeyType by considering each word as the number of characters divided by 5. While this method may not be as precise for direct word counting, it accounts for the varying lengths of words.").addToggle((bool) => bool.setValue(true).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.monkeytype_counting = value;
+      yield this.plugin.saveSettings();
+    })));
+    new import_obsidian.Setting(containerEl).setName("Show min-max typing speed").setDesc("Present the lowest and highest typing speeds observed, focusing specifically on the worst and best speeds recorded within 3-second intervals. Note that there is more numbers shifting per second so it may be more distracting").addToggle((bool) => bool.setValue(false).onChange((value) => __async(this, null, function* () {
+      this.plugin.settings.show_minmax = value;
       yield this.plugin.saveSettings();
     })));
   }

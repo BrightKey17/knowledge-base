@@ -15,10 +15,20 @@ PAT:
 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
 ```
 
+### GitLab
+Personal access token @GrandArena for Neusoft XDC project
+date of 2024/03/21
+expire at 2024/12/31
+```txt
+D3dkKtvixpMUaNYBE2dx
+```
+
 ### Google
 
 BrightKey
-ZiningQi@Gmail.com/Skyharbor#1690
+ZiningQi@Gmail.com
+`Skyharbor#1690`
+xsw2@WSX
 
 ### Yahoo
 

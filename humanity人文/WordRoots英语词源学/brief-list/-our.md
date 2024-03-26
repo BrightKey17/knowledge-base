@@ -1,0 +1,19 @@
+构成抽象名词/集合名词
+
+---
+amour
+ardour
+armour
+behaviour
+candour
+demeanour
+ fervour
+ humour
+ neighbour
+ odour
+ paramour
+ parlour
+ sapour
+tumour
+valour
+vigour

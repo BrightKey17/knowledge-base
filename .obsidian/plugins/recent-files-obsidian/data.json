@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "PlantUML",
+      "path": "computer-technique/UML/PlantUML.md"
+    },
+    {
+      "basename": "Proxy",
+      "path": "computer-technique/Design-Pattern/Proxy.md"
+    },
+    {
+      "basename": "Thread",
+      "path": "computer-technique/multi-thread/Thread.md"
+    },
+    {
+      "basename": "Book Notes",
+      "path": "template/Book Notes.md"
+    },
+    {
+      "basename": "Daily",
+      "path": "template/Daily.md"
+    },
+    {
+      "basename": "Blog Post",
+      "path": "template/Blog Post.md"
+    },
+    {
+      "basename": "FQDN",
+      "path": "computer-technique/FQDN.md"
+    },
+    {
+      "basename": "OKR",
+      "path": "template/OKR.md"
+    },
+    {
+      "basename": "-ous-itious-eous-ious-uous",
+      "path": "humanity人文/WordRoots英语词源学/branch-word/-ous-itious-eous-ious-uous.md"
+    },
+    {
+      "basename": "SuffixList",
+      "path": "humanity人文/WordRoots英语词源学/brief-list/SuffixList.md"
+    },
+    {
+      "basename": "-our",
+      "path": "humanity人文/WordRoots英语词源学/brief-list/-our.md"
+    },
+    {
+      "basename": "-ance-ence-once",
+      "path": "humanity人文/WordRoots英语词源学/branch-word/-ance-ence-once.md"
+    },
+    {
+      "basename": "Cornell Notes",
+      "path": "template/Cornell Notes.md"
+    },
+    {
+      "basename": "Eisenhower Matrix",
+      "path": "template/Eisenhower Matrix.md"
+    },
+    {
+      "basename": "Meeting Notes",
+      "path": "template/Meeting Notes.md"
+    },
+    {
+      "basename": "2024-03-20",
+      "path": "aim-today/2024-03-20.md"
+    },
+    {
+      "basename": "CMD-Linux",
+      "path": "computer-technique/CMD-Linux.md"
+    },
+    {
+      "basename": "Applications",
+      "path": "pesonalize/Applications.md"
+    },
+    {
+      "basename": "KeyVault",
+      "path": "pesonalize/KeyVault.md"
+    },
+    {
+      "basename": "Git",
+      "path": "computer-technique/Git.md"
+    },
+    {
+      "basename": "2024-02-21",
+      "path": "aim-today/2024-02-21.md"
+    },
+    {
+      "basename": "2024-02-22",
+      "path": "aim-today/2024-02-22.md"
+    },
+    {
       "basename": "2024-03-04",
       "path": "aim-today/2024-03-04.md"
     },
@@ -13,18 +101,6 @@
       "path": "humanity人文/MedicalVocabulary医学英语术语/MedicalTerminology.md"
     },
     {
-      "basename": "CMD-Linux",
-      "path": "computer-technique/CMD-Linux.md"
-    },
-    {
-      "basename": "Git",
-      "path": "computer-technique/Git.md"
-    },
-    {
-      "basename": "2024-02-22",
-      "path": "aim-today/2024-02-22.md"
-    },
-    {
       "basename": "NeoVista",
       "path": "zeal-reflect/NeoVista.md"
     },
@@ -35,10 +111,6 @@
     {
       "basename": "BigFive",
       "path": "humanity人文/BigFive.md"
-    },
-    {
-      "basename": "KeyVault",
-      "path": "pesonalize/KeyVault.md"
     },
     {
       "basename": "Docker",
@@ -59,10 +131,6 @@
     {
       "basename": "Global",
       "path": "computer-technique/Vim/Global.md"
-    },
-    {
-      "basename": "2024-02-21",
-      "path": "aim-today/2024-02-21.md"
     },
     {
       "basename": "RegularExpression",
@@ -131,74 +199,6 @@
     {
       "basename": "Footnote",
       "path": "obsidian/Footnote.md"
-    },
-    {
-      "basename": "Diagram",
-      "path": "obsidian/Diagram.md"
-    },
-    {
-      "basename": "Math",
-      "path": "obsidian/Math.md"
-    },
-    {
-      "basename": "AffixAndRoot",
-      "path": "humanity人文/WordRoots英语词源学/AffixAndRoot.md"
-    },
-    {
-      "basename": "Etymology",
-      "path": "humanity人文/WordRoots英语词源学/Etymology.md"
-    },
-    {
-      "basename": "Eponymy",
-      "path": "learning-model/Eponymy.md"
-    },
-    {
-      "basename": "Applications",
-      "path": "pesonalize/Applications.md"
-    },
-    {
-      "basename": "Plugins",
-      "path": "pesonalize/Plugins.md"
-    },
-    {
-      "basename": "九成宫醴泉铭释文",
-      "path": "humanity人文/Calligraphy书法/九成宫醴泉铭释文.md"
-    },
-    {
-      "basename": "金漆木雕大神龛",
-      "path": "humanity人文/金漆木雕大神龛.md"
-    },
-    {
-      "basename": "第475章 超级产能",
-      "path": "humanity人文/Novel/Public/第475章 超级产能.md"
-    },
-    {
-      "basename": "第474章 大河西来决昆仑 （完）",
-      "path": "humanity人文/Novel/Public/第474章 大河西来决昆仑 （完）.md"
-    },
-    {
-      "basename": "第473章 大河西来决昆仑 41",
-      "path": "humanity人文/Novel/Public/第473章 大河西来决昆仑 41.md"
-    },
-    {
-      "basename": "第472章 大河西来决昆仑 （40）",
-      "path": "humanity人文/Novel/Public/第472章 大河西来决昆仑 （40）.md"
-    },
-    {
-      "basename": "JohnHenryNewman",
-      "path": "humanity人文/先贤/JohnHenryNewman.md"
-    },
-    {
-      "basename": "PublicList",
-      "path": "humanity人文/Novel/Public/PublicList.md"
-    },
-    {
-      "basename": "第432章 大河西来决昆仑 （序）",
-      "path": "humanity人文/Novel/Public/第432章 大河西来决昆仑 （序）.md"
-    },
-    {
-      "basename": "Georgia O'Keeffe",
-      "path": "humanity人文/先贤/Georgia O'Keeffe.md"
     }
   ],
   "omittedPaths": [],

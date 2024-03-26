@@ -48,9 +48,8 @@ git config --global user.name "my-username"
 
 ## ignore
 
-### wildcard
-
-```txt
+ wildcard
+ ```txt
 ** wild card to match any level of subdirectories
 *.user/ to match some directories like ignore1.user/ ignore2.user/
 */* any directories, subdirectories and its contents
@@ -59,12 +58,12 @@ git config --global user.name "my-username"
 ```
 [WildCard-SquareBrackets-NegatingPatterns](https://linuxize.com/post/gitignore-ignoring-files-in-git/)
 
-### ignore already added files run
+ ignore already added files run
 `$ git rm -rf --cached .`
 
-### Display All Ignored Files
-
+ Display All Ignored Files
 `$ git status --ignored`
+
 ## rename
 
 > [!info]  How to updating an existing local clone to point to the new repository URL

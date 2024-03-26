@@ -1,10 +1,9 @@
 ---
 tags:
-  - English
-  - Linguistic
 aliases:
 ---
-# {{ title}}
+
+# {{title}}
 
 Date Finished: {{date}}
 Author:

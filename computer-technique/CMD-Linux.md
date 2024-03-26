@@ -53,6 +53,10 @@ system version
 lsb_release -a
 cat /etc/issue
 ```
+check if you are using an active release
+```batch
+hwe-support-status --verbose
+```
 cache
 ```shell
 free -h

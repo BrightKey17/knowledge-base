@@ -41,5 +41,6 @@
   "obsidian-latex",
   "obsidian-regex-replace",
   "obsidian-reminder-plugin",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-plantuml"
 ]

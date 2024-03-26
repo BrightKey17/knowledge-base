@@ -58,6 +58,13 @@
 
 - [Captura](https://mathewsachin.github.io/blog/2023/04/09/captura-unmaintained.html)
 > 	[FFmpeg](https://ffmpeg.org/)
+
+## Tools of Ubuntu
+
+### Terminal
+- Terminator
+- Terminology
+
 ## Games
 
 - 网易UU
@@ -67,4 +74,5 @@
 ## Airport
 
 - Clash For Windows
+- Clash Verge
 
